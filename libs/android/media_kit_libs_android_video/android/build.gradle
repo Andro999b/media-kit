@@ -58,10 +58,10 @@ task downloadDependencies(type: Exec) {
 
         // Download all *.jar dependencies & verify their MD5 checksums.
         def filesToDownload = [
-            ["url": "https://github.com/media-kit/libmpv-android-video-build/releases/download/v1.1.7/default-arm64-v8a.jar", "md5": "83df25b61193af8fa815e373143ac9af", "destination": file("$buildDir/v1.1.7/default-arm64-v8a.jar")],
-            ["url": "https://github.com/media-kit/libmpv-android-video-build/releases/download/v1.1.7/default-armeabi-v7a.jar", "md5": "22e21526fefc0a2b8f17adbec9f57590", "destination": file("$buildDir/v1.1.7/default-armeabi-v7a.jar")],
-            ["url": "https://github.com/media-kit/libmpv-android-video-build/releases/download/v1.1.7/default-x86_64.jar", "md5": "6fa26bf0459b11f1c0b0dbc29e5b940d", "destination": file("$buildDir/v1.1.7/default-x86_64.jar")],
-            ["url": "https://github.com/media-kit/libmpv-android-video-build/releases/download/v1.1.7/default-x86.jar", "md5": "0d742b756dc9d1fcd84ea271d8b68f32", "destination": file("$buildDir/v1.1.7/default-x86.jar")]
+            ["url": "https://github.com/user1121114685/libmpv-android-video-build/releases/download/20250505/default-arm64-v8a.jar", "md5": "ccc5f7bec72b39500a0d5cc693e7bd39", "destination": file("$buildDir/20250505/default-arm64-v8a.jar")],
+            ["url": "https://github.com/user1121114685/libmpv-android-video-build/releases/download/20250505/default-armeabi-v7a.jar", "md5": "07dfaa020e022766d13358c09987d5b7", "destination": file("$buildDir/20250505/default-armeabi-v7a.jar")],
+            ["url": "https://github.com/user1121114685/libmpv-android-video-build/releases/download/20250505/default-x86_64.jar", "md5": "82a342e35872d57be342f4b740c7d0fd", "destination": file("$buildDir/20250505/default-x86_64.jar")],
+            ["url": "https://github.com/user1121114685/libmpv-android-video-build/releases/download/20250505/default-x86.jar", "md5": "eb3812c4df57772e5d948e4f06f5530d", "destination": file("$buildDir/20250505/default-x86.jar")]
         ]
 
         filesToDownload.each { fileInfo ->
